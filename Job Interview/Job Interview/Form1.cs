@@ -27,9 +27,34 @@ namespace Job_Interview
             }
             else
             {   //Text from response enters into the conversation box, on a new line
-                conversationBox.Text += responseBox.Text + "\n";
+                conversationBox.Text += "You: " + responseBox.Text + "\n";
                 responseBox.Text = "";
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void conversationBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
