@@ -7,3 +7,6 @@ F:\University\Year 2\Group Project\Assignment2\Job Interview\Job Interview\obj\D
 F:\University\Year 2\Group Project\Assignment2\Job Interview\Job Interview\obj\Debug\Job Interview.csproj.GenerateResource.Cache
 F:\University\Year 2\Group Project\Assignment2\Job Interview\Job Interview\obj\Debug\Job Interview.exe
 F:\University\Year 2\Group Project\Assignment2\Job Interview\Job Interview\obj\Debug\Job Interview.pdb
+C:\Users\Rob\Dropbox\UNI\Year 2\Group Project\AI_Job_Interview\Job Interview\Job Interview\bin\Debug\Job Interview.exe.config
+C:\Users\Rob\Dropbox\UNI\Year 2\Group Project\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job Interview.exe
+C:\Users\Rob\Dropbox\UNI\Year 2\Group Project\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job Interview.pdb
