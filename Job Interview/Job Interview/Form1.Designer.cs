@@ -46,6 +46,7 @@
             answerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             answerButton.Cursor = System.Windows.Forms.Cursors.Hand;
             answerButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            answerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             answerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             answerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             answerButton.ForeColor = System.Drawing.Color.Transparent;
@@ -57,12 +58,12 @@
             answerButton.TabIndex = 2;
             answerButton.UseVisualStyleBackColor = false;
             answerButton.Click += new System.EventHandler(this.answerButton_Click);
-            answerButton.FlatAppearance.MouseOverBackColor = answerButton.BackColor;           
             // 
             // conversationBox
             // 
             this.conversationBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.conversationBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.conversationBox.Cursor = System.Windows.Forms.Cursors.No;
             this.conversationBox.Location = new System.Drawing.Point(5, 150);
             this.conversationBox.Margin = new System.Windows.Forms.Padding(0);
             this.conversationBox.MaximumSize = new System.Drawing.Size(559, 298);
