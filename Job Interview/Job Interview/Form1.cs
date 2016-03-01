@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Job_Interview
 {
-    public partial class Form1 : Form
+    public partial class OnlineInterviewFormBackground : Form
     {
-        public Form1()
+        public OnlineInterviewFormBackground()
         {
             InitializeComponent();
         }

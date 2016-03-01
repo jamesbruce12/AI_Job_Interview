@@ -13,6 +13,6 @@ C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview
 C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\bin\Debug\Job Interview.exe
 C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\bin\Debug\Job Interview.pdb
 C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job Interview.csprojResolveAssemblyReference.cache
-C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job_Interview.Form1.resources
 C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job_Interview.Properties.Resources.resources
 C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job Interview.csproj.GenerateResource.Cache
+C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job_Interview.OnlineInterviewFormBackground.resources
