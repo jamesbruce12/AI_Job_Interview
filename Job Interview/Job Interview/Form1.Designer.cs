@@ -33,39 +33,46 @@
             this.responseBox = new System.Windows.Forms.RichTextBox();
             this.answerButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // conversationBox
             // 
             this.conversationBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.conversationBox.Location = new System.Drawing.Point(12, 12);
+            this.conversationBox.Location = new System.Drawing.Point(6, 150);
+            this.conversationBox.Margin = new System.Windows.Forms.Padding(2);
             this.conversationBox.Name = "conversationBox";
             this.conversationBox.ReadOnly = true;
             this.conversationBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.conversationBox.Size = new System.Drawing.Size(476, 325);
+            this.conversationBox.Size = new System.Drawing.Size(559, 298);
             this.conversationBox.TabIndex = 0;
             this.conversationBox.Text = "";
+            this.conversationBox.TextChanged += new System.EventHandler(this.conversationBox_TextChanged);
             // 
             // responseBox
             // 
-            this.responseBox.BackColor = System.Drawing.Color.Khaki;
-            this.responseBox.Location = new System.Drawing.Point(12, 376);
+            this.responseBox.BackColor = System.Drawing.Color.Snow;
+            this.responseBox.Location = new System.Drawing.Point(2, 456);
+            this.responseBox.Margin = new System.Windows.Forms.Padding(2);
+            this.responseBox.MaxLength = 255;
             this.responseBox.Name = "responseBox";
-            this.responseBox.Size = new System.Drawing.Size(476, 121);
+            this.responseBox.Size = new System.Drawing.Size(449, 99);
             this.responseBox.TabIndex = 1;
             this.responseBox.Text = "";
             // 
             // answerButton
             // 
-            this.answerButton.BackColor = System.Drawing.Color.DarkKhaki;
+            this.answerButton.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.answerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.answerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerButton.Location = new System.Drawing.Point(495, 376);
+            this.answerButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.answerButton.Location = new System.Drawing.Point(459, 457);
+            this.answerButton.Margin = new System.Windows.Forms.Padding(2);
             this.answerButton.Name = "answerButton";
-            this.answerButton.Size = new System.Drawing.Size(142, 121);
+            this.answerButton.Size = new System.Drawing.Size(106, 98);
             this.answerButton.TabIndex = 2;
-            this.answerButton.Text = "Answer";
+            this.answerButton.Text = "Send";
             this.answerButton.UseVisualStyleBackColor = false;
             this.answerButton.Click += new System.EventHandler(this.answerButton_Click);
             // 
@@ -73,28 +80,47 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(495, 12);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 9);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 230);
+            this.pictureBox1.Size = new System.Drawing.Size(156, 135);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label1.Location = new System.Drawing.Point(171, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 31);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Kathy";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
             this.AcceptButton = this.answerButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(760, 507);
+            this.ClientSize = new System.Drawing.Size(576, 561);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.answerButton);
             this.Controls.Add(this.responseBox);
             this.Controls.Add(this.conversationBox);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Job Interview";
+            this.Text = "Online Interview";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -104,7 +130,7 @@
         private System.Windows.Forms.RichTextBox responseBox;
         private System.Windows.Forms.Button answerButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-
+        private System.Windows.Forms.Label label1;
     }
 }
 
