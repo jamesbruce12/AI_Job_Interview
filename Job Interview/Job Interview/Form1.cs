@@ -21,14 +21,25 @@ namespace Job_Interview
         private void answerButton_Click(object sender, EventArgs e)
         {
             //If nothing has been entered into the box, pop up error message
-            if(responseBox.Text == "")
+            if (responseBox.Text == "")
             {
                 System.Windows.Forms.MessageBox.Show("Please enter a response");
-            }
-            else
-            {   //Text from response enters into the conversation box, on a new line
-                conversationBox.Text += "You: " + responseBox.Text + "\n";
-                responseBox.Text = "";
+
+
+                //Temporary solution to "Kathin is writing.. " message
+                //Temporary solution to "Kathin is writing.. " message
+                //Temporary solution to "Kathin is writing.. " message
+                //Temporary solution to "Kathin is writing.. " message
+                //Temporary solution to "Kathin is writing.. " message
+                string interviewerName = "Kathrin";
+                Label_OnlineStatus.Text = interviewerName + " is writing...";
+                Label_OnlineStatus.Refresh();
+                System.Threading.Thread.Sleep(2000);
+                Label_OnlineStatus.Text = "Online";
+                //Temporary solution to "Kathin is writing.. " message
+                //Temporary solution to "Kathin is writing.. " message
+                //Temporary solution to "Kathin is writing.. " message
+                //Temporary solution to "Kathin is writing.. " message
             }
         }
 

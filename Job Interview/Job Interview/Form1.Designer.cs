@@ -1,5 +1,6 @@
 ﻿namespace Job_Interview
 {
+
     partial class OnlineInterviewFormBackground
     {
         /// <summary>
@@ -28,44 +29,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button answerButton;
+            System.Windows.Forms.Button answerButton1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OnlineInterviewFormBackground));
             this.conversationBox = new System.Windows.Forms.RichTextBox();
             this.responseBox = new System.Windows.Forms.RichTextBox();
             this.PictureBox = new System.Windows.Forms.PictureBox();
-            this.Label_Name = new System.Windows.Forms.Label();
-            this.Labal_OnlineStatus = new System.Windows.Forms.Label();
-            answerButton = new System.Windows.Forms.Button();
+            this.Label_InterviewerName = new System.Windows.Forms.Label();
+            this.Label_OnlineStatus = new System.Windows.Forms.Label();
+            this.answerButton = new RoundButton();
+            answerButton1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // answerButton
+            // answerButton1
             // 
-            answerButton.BackColor = System.Drawing.Color.Transparent;
-            answerButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("answerButton.BackgroundImage")));
-            answerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            answerButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            answerButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            answerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            answerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            answerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            answerButton.ForeColor = System.Drawing.Color.Transparent;
-            answerButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            answerButton.Location = new System.Drawing.Point(459, 457);
-            answerButton.Margin = new System.Windows.Forms.Padding(0);
-            answerButton.Name = "answerButton";
-            answerButton.Size = new System.Drawing.Size(106, 98);
-            answerButton.TabIndex = 2;
-            answerButton.UseVisualStyleBackColor = false;
-            answerButton.Click += new System.EventHandler(this.answerButton_Click);
+            answerButton1.Location = new System.Drawing.Point(0, 0);
+            answerButton1.Name = "answerButton1";
+            answerButton1.Size = new System.Drawing.Size(75, 23);
+            answerButton1.TabIndex = 7;
             // 
             // conversationBox
             // 
             this.conversationBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.conversationBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.conversationBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.conversationBox.Cursor = System.Windows.Forms.Cursors.No;
             this.conversationBox.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.conversationBox.Location = new System.Drawing.Point(5, 150);
+            this.conversationBox.Location = new System.Drawing.Point(0, 150);
             this.conversationBox.Margin = new System.Windows.Forms.Padding(0);
             this.conversationBox.MaximumSize = new System.Drawing.Size(559, 298);
             this.conversationBox.MinimumSize = new System.Drawing.Size(559, 298);
@@ -80,20 +69,20 @@
             // responseBox
             // 
             this.responseBox.BackColor = System.Drawing.Color.OldLace;
-            this.responseBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.responseBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.responseBox.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.responseBox.Location = new System.Drawing.Point(5, 455);
-            this.responseBox.Margin = new System.Windows.Forms.Padding(2);
+            this.responseBox.Location = new System.Drawing.Point(5, 453);
+            this.responseBox.Margin = new System.Windows.Forms.Padding(5);
             this.responseBox.MaxLength = 255;
             this.responseBox.Name = "responseBox";
-            this.responseBox.Size = new System.Drawing.Size(449, 99);
+            this.responseBox.Size = new System.Drawing.Size(479, 101);
             this.responseBox.TabIndex = 1;
             this.responseBox.Text = "";
             // 
             // PictureBox
             // 
             this.PictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PictureBox.BackgroundImage")));
-            this.PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PictureBox.Location = new System.Drawing.Point(6, 8);
             this.PictureBox.Margin = new System.Windows.Forms.Padding(0);
@@ -104,42 +93,63 @@
             this.PictureBox.TabStop = false;
             this.PictureBox.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Label_Name
+            // Label_InterviewerName
             // 
-            this.Label_Name.AutoSize = true;
-            this.Label_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.Label_Name.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Label_Name.Location = new System.Drawing.Point(147, 12);
-            this.Label_Name.Name = "Label_Name";
-            this.Label_Name.Size = new System.Drawing.Size(100, 31);
-            this.Label_Name.TabIndex = 4;
-            this.Label_Name.Text = "Kathrin";
-            this.Label_Name.Click += new System.EventHandler(this.label1_Click);
+            this.Label_InterviewerName.AutoSize = true;
+            this.Label_InterviewerName.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_InterviewerName.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Label_InterviewerName.Location = new System.Drawing.Point(142, 6);
+            this.Label_InterviewerName.Name = "Label_InterviewerName";
+            this.Label_InterviewerName.Size = new System.Drawing.Size(107, 37);
+            this.Label_InterviewerName.TabIndex = 4;
+            this.Label_InterviewerName.Text = "Kathrin";
+            this.Label_InterviewerName.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Labal_OnlineStatus
+            // Label_OnlineStatus
             // 
-            this.Labal_OnlineStatus.AutoSize = true;
-            this.Labal_OnlineStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Labal_OnlineStatus.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.Labal_OnlineStatus.Location = new System.Drawing.Point(150, 43);
-            this.Labal_OnlineStatus.Name = "Labal_OnlineStatus";
-            this.Labal_OnlineStatus.Size = new System.Drawing.Size(49, 17);
-            this.Labal_OnlineStatus.TabIndex = 5;
-            this.Labal_OnlineStatus.Text = "Online";
-            this.Labal_OnlineStatus.Click += new System.EventHandler(this.label2_Click);
+            this.Label_OnlineStatus.AutoSize = true;
+            this.Label_OnlineStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_OnlineStatus.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Label_OnlineStatus.Location = new System.Drawing.Point(2, 428);
+            this.Label_OnlineStatus.Name = "Label_OnlineStatus";
+            this.Label_OnlineStatus.Size = new System.Drawing.Size(54, 20);
+            this.Label_OnlineStatus.TabIndex = 5;
+            this.Label_OnlineStatus.Text = "Online";
+            this.Label_OnlineStatus.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // answerButton
+            // 
+            this.answerButton.BackColor = System.Drawing.Color.SlateGray;
+            this.answerButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("answerButton.BackgroundImage")));
+            this.answerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.answerButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.answerButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.answerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.answerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.answerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerButton.ForeColor = System.Drawing.Color.Transparent;
+            this.answerButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.answerButton.Location = new System.Drawing.Point(450, 428);
+            this.answerButton.Margin = new System.Windows.Forms.Padding(0);
+            this.answerButton.Name = "answerButton";
+            this.answerButton.Size = new System.Drawing.Size(127, 126);
+            this.answerButton.TabIndex = 6;
+            this.answerButton.UseVisualStyleBackColor = false;
+            this.answerButton.Click += new System.EventHandler(this.answerButton_Click);
             // 
             // OnlineInterviewFormBackground
             // 
-            this.AcceptButton = answerButton;
+            this.AcceptButton = answerButton1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(579, 561);
-            this.Controls.Add(this.Labal_OnlineStatus);
-            this.Controls.Add(this.Label_Name);
+            this.Controls.Add(this.answerButton);
+            this.Controls.Add(this.Label_OnlineStatus);
+            this.Controls.Add(this.Label_InterviewerName);
             this.Controls.Add(this.PictureBox);
-            this.Controls.Add(answerButton);
+            this.Controls.Add(answerButton1);
             this.Controls.Add(this.responseBox);
             this.Controls.Add(this.conversationBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -161,8 +171,9 @@
         private System.Windows.Forms.RichTextBox conversationBox;
         private System.Windows.Forms.RichTextBox responseBox;
         private System.Windows.Forms.PictureBox PictureBox;
-        private System.Windows.Forms.Label Label_Name;
-        private System.Windows.Forms.Label Labal_OnlineStatus;
+        private System.Windows.Forms.Label Label_InterviewerName;
+        private System.Windows.Forms.Label Label_OnlineStatus;
+        private RoundButton answerButton;
     }
 }
 
