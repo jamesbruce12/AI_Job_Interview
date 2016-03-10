@@ -62,8 +62,9 @@
             // conversationBox
             // 
             this.conversationBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.conversationBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.conversationBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.conversationBox.Cursor = System.Windows.Forms.Cursors.No;
+            this.conversationBox.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conversationBox.Location = new System.Drawing.Point(5, 150);
             this.conversationBox.Margin = new System.Windows.Forms.Padding(0);
             this.conversationBox.MaximumSize = new System.Drawing.Size(559, 298);
@@ -78,7 +79,9 @@
             // 
             // responseBox
             // 
-            this.responseBox.BackColor = System.Drawing.Color.SeaShell;
+            this.responseBox.BackColor = System.Drawing.Color.OldLace;
+            this.responseBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.responseBox.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.responseBox.Location = new System.Drawing.Point(5, 455);
             this.responseBox.Margin = new System.Windows.Forms.Padding(2);
             this.responseBox.MaxLength = 255;
