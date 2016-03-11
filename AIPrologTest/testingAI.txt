@@ -1,0 +1,38 @@
+
+
+%%  eliza(+Stimuli, -Response) is det.
+%   @param  Stimuli is a list of atoms (words).
+%   @author Richard A. O'Keefe (The Craft of Prolog)
+
+definaltely_not_eliza(Stimuli, Response) :-
+    template(InternalStimuli, InternalResponse),
+    match(InternalStimuli, Stimuli),
+    match(InternalResponse, Response),
+    !.
+
+template([s([i,am]),s(X)], [s([why,are,you, a]),s(X),w('?')]).
+template([w(i),s(X),w(you)], [s([why,do,you]),s(X),w(me),w('?')]).
+template([s([i,know]),s(X)], [s(X), s([is, a, valuable, skill])]).
+
+template([w(i, know), s(X)], [s([thats, good, to, know]),s(X),w([is, a, valuable, skill])]).
+
+match([],[]).
+match([Item|Items],[Word|Words]) :-
+    match(Item, Items, Word, Words).
+
+match(w(Word), Items, Word, Words) :-
+    match(Items, Words).
+match(s([Word|Seg]), Items, Word, Words0) :-
+    append(Seg, Words1, Words0),
+    match(Items, Words1).
+
+
+/** <examples>
+
+Copy this page into swish or another prologue programming software
+
+?- definaltely_not_eliza([i, am, a, team, player], Response).
+?- definaltely_not_eliza([i, am, good, at, programming], Responce).
+?- definaltely_not_eliza([i, know, java], Responce).
+
+*/
