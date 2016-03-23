@@ -1,18 +1,9 @@
-C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\bin\Debug\Job Interview.exe.config
-C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\bin\Debug\Job Interview.exe
-C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\bin\Debug\Job Interview.pdb
-C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job.Interview.csprojResolveAssemblyReference.cache
-C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job_Interview.OnlineInterviewFormBackground.resources
-C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job_Interview.Properties.Resources.resources
-C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job.Interview.csproj.GenerateResource.Cache
-C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job Interview.exe
-C:\Users\Computing\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job Interview.pdb
-C:\Users\Sean\Documents\University\Year 2\Group Project\Program\AI_Job_Interview\Job Interview\Job Interview\bin\Debug\Job Interview.exe.config
-C:\Users\Sean\Documents\University\Year 2\Group Project\Program\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job Interview.exe
-C:\Users\Sean\Documents\University\Year 2\Group Project\Program\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job Interview.pdb
-C:\Users\Sean\Documents\University\Year 2\Group Project\Program\AI_Job_Interview\Job Interview\Job Interview\bin\Debug\Job Interview.exe
-C:\Users\Sean\Documents\University\Year 2\Group Project\Program\AI_Job_Interview\Job Interview\Job Interview\bin\Debug\Job Interview.pdb
-C:\Users\Sean\Documents\University\Year 2\Group Project\Program\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job.Interview.csprojResolveAssemblyReference.cache
-C:\Users\Sean\Documents\University\Year 2\Group Project\Program\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job_Interview.OnlineInterviewFormBackground.resources
-C:\Users\Sean\Documents\University\Year 2\Group Project\Program\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job_Interview.Properties.Resources.resources
-C:\Users\Sean\Documents\University\Year 2\Group Project\Program\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job.Interview.csproj.GenerateResource.Cache
+D:\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\bin\Debug\Job Interview.exe.config
+D:\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\bin\Debug\Job Interview.exe
+D:\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\bin\Debug\Job Interview.pdb
+D:\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job.Interview.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job_Interview.OnlineInterviewFormBackground.resources
+D:\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job_Interview.Properties.Resources.resources
+D:\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job.Interview.csproj.GenerateResource.Cache
+D:\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job Interview.exe
+D:\Documents\GitHub\AI_Job_Interview\Job Interview\Job Interview\obj\Debug\Job Interview.pdb
