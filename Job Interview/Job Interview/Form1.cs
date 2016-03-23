@@ -24,23 +24,27 @@ namespace Job_Interview
             if (responseBox.Text == "")
             {
                 System.Windows.Forms.MessageBox.Show("Please enter a response");
-
-
-                //Temporary solution to "Kathin is writing.. " message
-                //Temporary solution to "Kathin is writing.. " message
-                //Temporary solution to "Kathin is writing.. " message
-                //Temporary solution to "Kathin is writing.. " message
-                //Temporary solution to "Kathin is writing.. " message
-                string interviewerName = "Kathrin";
-                Label_OnlineStatus.Text = interviewerName + " is writing...";
-                Label_OnlineStatus.Refresh();
-                System.Threading.Thread.Sleep(2000);
-                Label_OnlineStatus.Text = "Online";
-                //Temporary solution to "Kathin is writing.. " message
-                //Temporary solution to "Kathin is writing.. " message
-                //Temporary solution to "Kathin is writing.. " message
-                //Temporary solution to "Kathin is writing.. " message
             }
+            else
+            {
+                conversationBox.Text += responseBox.Text + "\n";
+                responseBox.Text = "";
+            }
+
+            //Temporary solution to "Kathin is writing.. " message
+            //Temporary solution to "Kathin is writing.. " message
+            //Temporary solution to "Kathin is writing.. " message
+            //Temporary solution to "Kathin is writing.. " message
+            //Temporary solution to "Kathin is writing.. " message
+            string interviewerName = "Kathrin";
+            Label_OnlineStatus.Text = interviewerName + " is writing...";
+            Label_OnlineStatus.Refresh();
+            System.Threading.Thread.Sleep(2000);
+            Label_OnlineStatus.Text = "Online";
+            //Temporary solution to "Kathin is writing.. " message
+            //Temporary solution to "Kathin is writing.. " message
+            //Temporary solution to "Kathin is writing.. " message
+            //Temporary solution to "Kathin is writing.. " message
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
