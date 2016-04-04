@@ -1,21 +1,31 @@
-
-
-%%  eliza(+Stimuli, -Response) is det.
-%   @param  Stimuli is a list of atoms (words).
-%   @author Richard A. O'Keefe (The Craft of Prolog)
-
-definaltely_not_eliza(Stimuli, Response) :-
+/** Rule definition for Kathy **/
+kathy(Stimuli, Response) :-
     template(InternalStimuli, InternalResponse),
     match(InternalStimuli, Stimuli),
     match(InternalResponse, Response),
     !.
+/** AI TEMPLATE ANSWERS **/
+/** Saying hello! **/
+template([s([hello])], [s([hello, how, are, you,?])]). 
+template([s([hey])], [s([hello, how, are, you,?])]). 
+template([s([hi])], [s([hello, how, are, you,?])]). 
 
-template([s([i,am]),s(X)], [s([why,are,you, a]),s(X),w('?')]).
+/** saying im fine! **/
+template([s([im, fine, how, are, you, ?])], [s([im, fine, too, thanks, for, asking, lets, start, the, interview])]). 
+template([s([im, fine])], [s([ok, lets, start, the, interview])]). 
+
+/** initiating questions! **/
+template([s([ok])], [s([what, is, your, usual, role, in, a, team, ?])]).
+template([s([lets, begin])], [s([what, is, your, usual, role, in, a, team, ?])]).
+
+/** replying to user responces **/
+template(s([usually, i, take, the, role, of]), s
+template([s([i,am]),s(X)], [s([why,are,you]),s(X),w('?')]).
 template([w(i),s(X),w(you)], [s([why,do,you]),s(X),w(me),w('?')]).
-template([s([i,know]),s(X)], [s(X), s([is, a, valuable, skill])]).
 
-template([w(i, know), s(X)], [s([thats, good, to, know]),s(X),w([is, a, valuable, skill])]).
 
+
+         /** searching for the correct reply! **/         
 match([],[]).
 match([Item|Items],[Word|Words]) :-
     match(Item, Items, Word, Words).
@@ -25,14 +35,3 @@ match(w(Word), Items, Word, Words) :-
 match(s([Word|Seg]), Items, Word, Words0) :-
     append(Seg, Words1, Words0),
     match(Items, Words1).
-
-
-/** <examples>
-
-Copy this page into swish or another prologue programming software
-
-?- definaltely_not_eliza([i, am, a, team, player], Response).
-?- definaltely_not_eliza([i, am, good, at, programming], Responce).
-?- definaltely_not_eliza([i, know, java], Responce).
-
-*/
