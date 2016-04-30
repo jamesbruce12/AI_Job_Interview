@@ -1,0 +1,28 @@
+
+kathy(Stimuli, Response) :-
+    open('Input.txt', read, Str),
+    read(Str,Stimuli),
+    close(Str),
+    write(Stimuli),
+    template(InternalStimuli, InternalResponse),
+    match(InternalStimuli, Stimuli),
+    match(InternalResponse, Response),
+    open('response.txt',write,Stream),
+    write(Stream,Response),  nl(Stream),
+    close(Stream),
+    !.
+
+template([s([hello])], [s([baby, this, works])]).
+
+
+
+match([],[]).
+match([Item|Items],[Word|Words]) :-
+    match(Item, Items, Word, Words).
+
+match(w(Word), Items, Word, Words) :-
+    match(Items, Words).
+
+match(s([Word|Seg]), Items, Word, Words0) :-
+    append(Seg, Words1, Words0),
+    match(Items, Words1).
